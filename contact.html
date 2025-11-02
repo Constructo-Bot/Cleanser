@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Teknikar Plumbing for professional plumbing services. Call (555) 0123 for 24/7 emergency service or use our online contact form for free estimates.">
+    <meta name="keywords" content="contact plumber, plumbing contact, emergency plumbing contact, plumbing estimate, plumbing service request">
+    <meta name="author" content="Teknikar Plumbing">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Contact Us - Teknikar Plumbing">
+    <meta property="og:description" content="Contact Teknikar Plumbing for professional plumbing services. 24/7 emergency service available. Request a free estimate today.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://teknikarplumbing.com/contact.html">
+
+    <title>Contact Us - Teknikar Plumbing</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Emergency Banner -->
+    <div class="emergency-banner">
+        🚨 Emergency Plumbing Available 24/7 - Call Now: <a href="tel:+1-555-0123" class="phone-number">(555) 0123</a>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-contact">
+                    <span>📞 <a href="tel:+1-555-0123" class="phone-link">(555) 0123</a></span>
+                    <span>✉️ info@teknikarplumbing.com</span>
+                    <span>🕐 24/7 Emergency Service</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="index.html" class="logo">
+                            <img src="images/logo.png" alt="Teknikar Plumbing Logo" width="40" height="40">
+                            Teknikar Plumbing
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                            ☰
+                        </button>
+                        <nav id="mainNav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="testimonials.html">Testimonials</a></li>
+                                <li><a href="contact.html" class="active">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Contact Teknikar Plumbing</h1>
+            <p class="hero-subtitle">Get in touch for professional plumbing services and free estimates</p>
+        </div>
+    </section>
+
+    <!-- Contact Form and Info Section -->
+    <section class="section-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="contact-form">
+                        <h2>Request Service or Free Estimate</h2>
+                        <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+
+                        <form id="contactForm" action="#" method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" class="form-control" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="(555) 123-4567" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="serviceType">Service Type *</label>
+                                <select id="serviceType" name="serviceType" class="form-control" required>
+                                    <option value="">Please select a service type</option>
+                                    <option value="emergency">Emergency Plumbing</option>
+                                    <option value="drain-cleaning">Drain Cleaning</option>
+                                    <option value="water-heater">Water Heater Service</option>
+                                    <option value="pipe-repair">Pipe Repair</option>
+                                    <option value="fixture-installation">Fixture Installation</option>
+                                    <option value="gas-line">Gas Line Service</option>
+                                    <option value="backflow">Backflow Prevention</option>
+                                    <option value="commercial">Commercial Plumbing</option>
+                                    <option value="inspection">Plumbing Inspection</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="urgency">Urgency Level</label>
+                                <select id="urgency" name="urgency" class="form-control">
+                                    <option value="routine">Routine Service</option>
+                                    <option value="soon">Needed Soon (1-2 weeks)</option>
+                                    <option value="urgent">Urgent (within 48 hours)</option>
+                                    <option value="emergency">Emergency (ASAP)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">How can we help you? *</label>
+                                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Please describe your plumbing issue or service needs..." required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactPreference">Preferred Contact Method</label>
+                                <select id="contactPreference" name="contactPreference" class="form-control">
+                                    <option value="phone">Phone Call</option>
+                                    <option value="email">Email</option>
+                                    <option value="text">Text Message</option>
+                                    <option value="any">Any Method</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bestTime">Best Time to Contact</label>
+                                <select id="bestTime" name="bestTime" class="form-control">
+                                    <option value="anytime">Anytime</option>
+                                    <option value="morning">Morning (8 AM - 12 PM)</option>
+                                    <option value="afternoon">Afternoon (12 PM - 5 PM)</option>
+                                    <option value="evening">Evening (5 PM - 7 PM)</option>
+                                </select>
+                            </div>
+
+                            <!-- Honeypot field for spam prevention -->
+                            <div class="form-group" style="display: none;">
+                                <label for="website">Website</label>
+                                <input type="text" id="website" name="website" tabindex="-1">
+                            </div>
+
+                            <div class="form-group">
+                                <div class="checkbox-wrapper">
+                                    <input type="checkbox" id="consent" name="consent" required>
+                                    <label for="consent">I consent to receive communications from Teknikar Plumbing about my service request.</label>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary btn-large">
+                                    Send Request
+                                </button>
+                                <button type="reset" class="btn btn-outline">
+                                    Clear Form
+                                </button>
+                            </div>
+
+                            <div id="formMessage" class="form-message"></div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <p>Multiple ways to reach us for your convenience.</p>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h4>Primary Phone</h4>
+                                <p><a href="tel:+1-555-0123" class="phone-link">(555) 0123</a></p>
+                                <p class="contact-note">For all inquiries and appointments</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">🚨</div>
+                            <div class="contact-details">
+                                <h4>Emergency Line</h4>
+                                <p><a href="tel:+1-555-0123" class="emergency-link">(555) 0123</a></p>
+                                <p class="contact-note">24/7 Emergency Service Available</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-details">
+                                <h4>Email Address</h4>
+                                <p><a href="mailto:info@teknikarplumbing.com">info@teknikarplumbing.com</a></p>
+                                <p class="contact-note">We respond within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Service Area</h4>
+                                <p>Serving Your City and Surrounding Areas</p>
+                                <p class="contact-note"><a href="about.html#service-areas">View complete service area</a></p>
+                            </div>
+                        </div>
+
+                        <div class="business-hours">
+                            <h3>Business Hours</h3>
+                            <div class="hours-grid">
+                                <div class="hours-item">
+                                    <span class="hours-day">Monday - Friday:</span>
+                                    <span class="hours-time">8:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="hours-day">Saturday:</span>
+                                    <span class="hours-time">9:00 AM - 4:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="hours-day">Sunday:</span>
+                                    <span class="hours-time">Emergency Service Only</span>
+                                </div>
+                                <div class="hours-item emergency-hours">
+                                    <span class="hours-day">Emergency Service:</span>
+                                    <span class="hours-time">24/7 - 365 Days</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="response-time">
+                            <h3>Response Times</h3>
+                            <ul class="response-list">
+                                <li>🚨 <strong>Emergencies:</strong> Within 30 minutes</li>
+                                <li>📞 <strong>Phone Calls:</strong> Immediate during business hours</li>
+                                <li>✉️ <strong>Email Inquiries:</strong> Within 24 hours</li>
+                                <li>📝 <strong>Form Submissions:</strong> Within 2-4 hours</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="section-title">
+                <h2>Service Areas</h2>
+                <p>Proudly serving communities throughout the region</p>
+            </div>
+            <div class="service-areas-grid">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="area-card">
+                            <h3>Your City</h3>
+                            <ul>
+                                <li>Downtown District</li>
+                                <li>North Side</li>
+                                <li>South Side</li>
+                                <li>East End</li>
+                                <li>West Quarter</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="area-card">
+                            <h3>North County</h3>
+                            <ul>
+                                <li>Springfield Heights</li>
+                                <li>Riverside</li>
+                                <li>Mountain View</li>
+                                <li>Lake District</li>
+                                <li>Oak Valley</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="area-card">
+                            <h3>South County</h3>
+                            <ul>
+                                <li>Garden Grove</li>
+                                <li>Sunset Hills</li>
+                                <li>Willow Creek</li>
+                                <li>Pine Ridge</li>
+                                <li>Maple Woods</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p><strong>Don't see your area listed?</strong></p>
+                <p>Call us to check service availability: <a href="tel:+1-555-0123">(555) 0123</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact Section -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <h2>🚨 Plumbing Emergency?</h2>
+            <p>Don't wait for emergency plumbing issues to become disasters. Call us immediately for 24/7 emergency service.</p>
+            <div class="emergency-contact-info mt-4">
+                <div class="emergency-phone">
+                    <a href="tel:+1-555-0123" class="btn btn-primary btn-large">
+                        📞 Call Emergency Line: (555) 0123
+                    </a>
+                </div>
+                <div class="emergency-info">
+                    <p><strong>Available 24/7 - 365 Days a Year</strong></p>
+                    <p>Fast response times for burst pipes, major leaks, sewer backups, and other plumbing emergencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            <div class="faq-section">
+                <div class="faq-item">
+                    <h4>How quickly can you respond to emergency calls?</h4>
+                    <p>We aim to respond to emergency calls within 30 minutes, with technicians arriving typically within 60-90 minutes depending on your location and traffic conditions.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you provide free estimates?</h4>
+                    <p>Yes, we provide free, no-obligation estimates for most plumbing services. Emergency repairs may require immediate assessment, but we always provide pricing before proceeding with work.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Are you licensed and insured?</h4>
+                    <p>Absolutely. We are fully licensed as master plumbers, carry comprehensive liability insurance, and maintain all necessary certifications for gas line work and other specialized services.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What payment methods do you accept?</h4>
+                    <p>We accept cash, checks, and all major credit cards. We also offer financing options for larger projects like complete repiping or major installations.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you offer warranties on your work?</h4>
+                    <p>Yes, we stand behind our work with comprehensive warranties. Labor warranties typically range from 1-5 years depending on the service, and we honor all manufacturer warranties on parts and equipment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Teknikar Plumbing</h3>
+                    <p>Your trusted local plumbing experts providing professional, reliable service for over 15 years.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Google">🔍</a>
+                        <a href="#" aria-label="Yelp">⭐</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="testimonials.html">Customer Reviews</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#emergency">Emergency Plumbing</a></li>
+                        <li><a href="services.html#drains">Drain Cleaning</a></li>
+                        <li><a href="services.html#water-heaters">Water Heater Services</a></li>
+                        <li><a href="services.html#pipes">Pipe Repair</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>📞 <a href="tel:+1-555-0123">(555) 0123</a></li>
+                        <li>✉️ <a href="mailto:info@teknikarplumbing.com">info@teknikarplumbing.com</a></li>
+                        <li>🕐 24/7 Emergency Service</li>
+                        <li>📍 Serving Your Area</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Teknikar Plumbing. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/contact-form.js"></script>
+</body>
+</html>
