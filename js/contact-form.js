@@ -467,5 +467,4 @@ const FormValidation = {
         return zipRegex.test(zip);
     }
 };
-
 window.FormValidation = FormValidation;
