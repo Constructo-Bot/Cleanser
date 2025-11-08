@@ -1,13 +1,8 @@
-/* Teknikar Plumbing - Main Stylesheet */
-
-/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* CSS Variables for color scheme */
 :root {
     --primary-blue: #0077B6;
     --secondary-blue: #00B4D8;
@@ -20,8 +15,6 @@
     --warning-orange: #fd7e14;
     --error-red: #dc3545;
 }
-
-/* Base typography */
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -29,49 +22,39 @@ body {
     color: var(--dark-gray);
     background-color: var(--white);
 }
-
-/* Headings */
 h1 {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--primary-blue);
 }
-
 h2 {
     font-size: 1.75rem;
     font-weight: 600;
     margin-bottom: 0.875rem;
     color: var(--primary-blue);
 }
-
 h3 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
     color: var(--dark-gray);
 }
-
 h4 {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.625rem;
     color: var(--dark-gray);
 }
-
-/* Links */
 a {
     color: var(--primary-blue);
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
 a:hover {
     color: var(--secondary-blue);
     text-decoration: underline;
 }
-
-/* Buttons */
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -84,66 +67,54 @@ a:hover {
     transition: all 0.3s ease;
     text-decoration: none;
 }
-
 .btn-primary {
     background-color: var(--primary-blue);
     color: var(--white);
 }
-
 .btn-primary:hover {
     background-color: var(--secondary-blue);
     color: var(--white);
     text-decoration: none;
     transform: translateY(-2px);
 }
-
 .btn-secondary {
     background-color: var(--secondary-blue);
     color: var(--white);
 }
-
 .btn-secondary:hover {
     background-color: var(--primary-blue);
     color: var(--white);
     text-decoration: none;
     transform: translateY(-2px);
 }
-
 .btn-outline {
     background-color: transparent;
     color: var(--primary-blue);
     border: 2px solid var(--primary-blue);
 }
-
 .btn-outline:hover {
     background-color: var(--primary-blue);
     color: var(--white);
     text-decoration: none;
 }
-
 .btn-large {
     padding: 16px 32px;
     font-size: 1.125rem;
 }
-
-/* Container and grid system */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
-
 .row {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -10px;
 }
-
 .col {
     flex: 1;
     padding: 0 10px;
 }
-
 .col-1 { flex: 0 0 8.333333%; }
 .col-2 { flex: 0 0 16.666667%; }
 .col-3 { flex: 0 0 25%; }
@@ -152,8 +123,6 @@ a:hover {
 .col-8 { flex: 0 0 66.666667%; }
 .col-9 { flex: 0 0 75%; }
 .col-12 { flex: 0 0 100%; }
-
-/* Header and navigation */
 header {
     background-color: var(--white);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -161,24 +130,20 @@ header {
     top: 0;
     z-index: 1000;
 }
-
 .header-top {
     background-color: var(--primary-blue);
     color: var(--white);
     padding: 8px 0;
 }
-
 .header-contact {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 0.875rem;
 }
-
 .header-main {
     padding: 20px 0;
 }
-
 .logo {
     display: flex;
     align-items: center;
@@ -187,35 +152,29 @@ header {
     color: var(--primary-blue);
     text-decoration: none;
 }
-
 .logo img {
     width: 40px;
     height: 40px;
     margin-right: 12px;
 }
-
 nav ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-
 nav ul li {
     margin-left: 2rem;
 }
-
 nav ul li a {
     color: var(--dark-gray);
     font-weight: 500;
     transition: color 0.3s ease;
 }
-
 nav ul li a:hover {
     color: var(--primary-blue);
     text-decoration: none;
 }
-
 .mobile-menu-toggle {
     display: none;
     background: none;
@@ -224,63 +183,49 @@ nav ul li a:hover {
     cursor: pointer;
     color: var(--dark-gray);
 }
-
-/* Hero section */
 .hero {
     background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
     color: var(--white);
     padding: 80px 0;
     text-align: center;
 }
-
 .hero h1 {
     font-size: 3rem;
     color: var(--white);
     margin-bottom: 1.5rem;
 }
-
 .hero p {
     font-size: 1.25rem;
     margin-bottom: 2rem;
     opacity: 0.9;
 }
-
 .hero-buttons {
     display: flex;
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
 }
-
-/* Section styles */
 section {
     padding: 60px 0;
 }
-
 .section-light {
     background-color: var(--light-gray);
 }
-
 .section-dark {
     background-color: var(--white);
 }
-
 .section-title {
     text-align: center;
     margin-bottom: 3rem;
 }
-
 .section-title h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
-
 .section-title p {
     font-size: 1.125rem;
     color: var(--medium-gray);
 }
-
-/* Cards */
 .card {
     background-color: var(--white);
     border-radius: 8px;
@@ -289,12 +234,10 @@ section {
     height: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(0,0,0,0.15);
 }
-
 .card-icon {
     width: 60px;
     height: 60px;
@@ -307,21 +250,16 @@ section {
     font-size: 1.5rem;
     color: var(--primary-blue);
 }
-
 .card h3 {
     color: var(--primary-blue);
     margin-bottom: 1rem;
 }
-
-/* Service grid */
 .service-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
 }
-
-/* Testimonial cards */
 .testimonial-card {
     background-color: var(--white);
     border-radius: 8px;
@@ -329,45 +267,36 @@ section {
     padding: 2rem;
     margin-bottom: 2rem;
 }
-
 .testimonial-rating {
     color: #ffc107;
     margin-bottom: 1rem;
 }
-
 .testimonial-text {
     font-style: italic;
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
-
 .testimonial-author {
     display: flex;
     align-items: center;
 }
-
 .testimonial-author img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin-right: 1rem;
 }
-
 .testimonial-author-info h4 {
     margin-bottom: 0.25rem;
 }
-
 .testimonial-author-info p {
     color: var(--medium-gray);
     font-size: 0.875rem;
 }
-
-/* Team member cards */
 .team-member {
     text-align: center;
     margin-bottom: 2rem;
 }
-
 .team-member img {
     width: 200px;
     height: 200px;
@@ -375,35 +304,28 @@ section {
     margin-bottom: 1.5rem;
     object-fit: cover;
 }
-
 .team-member h3 {
     margin-bottom: 0.5rem;
 }
-
 .team-member p {
     color: var(--medium-gray);
     margin-bottom: 1rem;
 }
-
-/* Contact form */
 .contact-form {
     background-color: var(--white);
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     padding: 2rem;
 }
-
 .form-group {
     margin-bottom: 1.5rem;
 }
-
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 600;
     color: var(--dark-gray);
 }
-
 .form-control {
     width: 100%;
     padding: 12px 16px;
@@ -412,33 +334,26 @@ section {
     font-size: 1rem;
     transition: border-color 0.3s ease;
 }
-
 .form-control:focus {
     outline: none;
     border-color: var(--primary-blue);
     box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.1);
 }
-
 textarea.form-control {
     resize: vertical;
     min-height: 120px;
 }
-
 select.form-control {
     cursor: pointer;
 }
-
-/* Contact information */
 .contact-info {
     margin-bottom: 2rem;
 }
-
 .contact-item {
     display: flex;
     align-items: center;
     margin-bottom: 1.5rem;
 }
-
 .contact-item i {
     width: 50px;
     height: 50px;
@@ -451,36 +366,28 @@ select.form-control {
     color: var(--primary-blue);
     font-size: 1.25rem;
 }
-
 .contact-item h4 {
     margin-bottom: 0.25rem;
 }
-
 .contact-item p {
     color: var(--medium-gray);
     margin: 0;
 }
-
-/* Call to action section */
 .cta-section {
     background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
     color: var(--white);
     text-align: center;
     padding: 60px 0;
 }
-
 .cta-section h2 {
     color: var(--white);
     margin-bottom: 1.5rem;
 }
-
 .cta-section p {
     font-size: 1.125rem;
     margin-bottom: 2rem;
     opacity: 0.9;
 }
-
-/* Emergency banner */
 .emergency-banner {
     background-color: var(--error-red);
     color: var(--white);
@@ -488,86 +395,67 @@ select.form-control {
     padding: 1rem;
     font-weight: 600;
 }
-
 .emergency-banner a {
     color: var(--white);
     text-decoration: underline;
 }
-
-/* Footer */
 footer {
     background-color: var(--dark-gray);
     color: var(--white);
     padding: 40px 0 20px;
 }
-
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
 }
-
 .footer-section h3 {
     color: var(--white);
     margin-bottom: 1rem;
 }
-
 .footer-section ul {
     list-style: none;
 }
-
 .footer-section ul li {
     margin-bottom: 0.5rem;
 }
-
 .footer-section ul li a {
     color: #ccc;
     text-decoration: none;
 }
-
 .footer-section ul li a:hover {
     color: var(--accent-blue);
 }
-
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
     border-top: 1px solid #555;
     color: #ccc;
 }
-
-/* Utility classes */
 .text-center { text-align: center; }
 .text-left { text-align: left; }
 .text-right { text-align: right; }
-
 .mb-1 { margin-bottom: 0.5rem; }
 .mb-2 { margin-bottom: 1rem; }
 .mb-3 { margin-bottom: 1.5rem; }
 .mb-4 { margin-bottom: 2rem; }
 .mb-5 { margin-bottom: 3rem; }
-
 .mt-1 { margin-top: 0.5rem; }
 .mt-2 { margin-top: 1rem; }
 .mt-3 { margin-top: 1.5rem; }
 .mt-4 { margin-top: 2rem; }
 .mt-5 { margin-top: 3rem; }
-
 .p-1 { padding: 0.5rem; }
 .p-2 { padding: 1rem; }
 .p-3 { padding: 1.5rem; }
 .p-4 { padding: 2rem; }
 .p-5 { padding: 3rem; }
-
 .d-none { display: none; }
 .d-block { display: block; }
 .d-flex { display: flex; }
-
 .justify-center { justify-content: center; }
 .align-center { align-items: center; }
-
-/* Animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -578,92 +466,73 @@ footer {
         transform: translateY(0);
     }
 }
-
 .fade-in-up {
     animation: fadeInUp 0.6s ease-out;
 }
-
-/* Focus styles for accessibility */
 .btn:focus,
 .form-control:focus,
 a:focus {
     outline: 2px solid var(--accent-blue);
     outline-offset: 2px;
 }
-
-/* Form specific styles */
 .form-row {
     display: flex;
     gap: 1rem;
 }
-
 .form-row .form-group {
     flex: 1;
 }
-
 .form-actions {
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
 }
-
 .checkbox-wrapper {
     display: flex;
     align-items: flex-start;
     gap: 0.5rem;
 }
-
 .checkbox-wrapper input[type="checkbox"] {
     margin-top: 0.25rem;
 }
-
 .checkbox-wrapper label {
     margin-bottom: 0;
     font-weight: normal;
 }
-
 .form-message {
     margin-top: 1rem;
     padding: 1rem;
     border-radius: 6px;
     display: none;
 }
-
 .form-message.success {
     background-color: #d4edda;
     border: 1px solid #c3e6cb;
     color: #155724;
 }
-
 .form-message.error {
     background-color: #f8d7da;
     border: 1px solid #f5c6cb;
     color: #721c24;
 }
-
 .form-message ul {
     margin: 0.5rem 0;
     padding-left: 1.5rem;
 }
-
 .character-counter {
     font-size: 0.875rem;
     color: var(--medium-gray);
     text-align: right;
     margin-top: 0.5rem;
 }
-
 .form-control.error {
     border-color: var(--error-red);
     box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
 }
-
 .form-group.focused .form-control {
     border-color: var(--primary-blue);
     box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.1);
 }
-
-/* Service grid layout adjustments */
 .service-overview-grid .service-overview-card {
     background-color: var(--white);
     border-radius: 8px;
@@ -672,12 +541,9 @@ a:focus {
     text-align: center;
     transition: transform 0.3s ease;
 }
-
 .service-overview-grid .service-overview-card:hover {
     transform: translateY(-3px);
 }
-
-/* Testimonials specific styles */
 .rating-summary {
     background-color: var(--white);
     border-radius: 8px;
@@ -685,11 +551,9 @@ a:focus {
     padding: 2rem;
     margin-bottom: 2rem;
 }
-
 .overall-rating {
     text-align: center;
 }
-
 .rating-display {
     display: flex;
     align-items: center;
@@ -697,39 +561,32 @@ a:focus {
     gap: 1rem;
     margin-top: 1rem;
 }
-
 .rating-number {
     font-size: 3rem;
     font-weight: 700;
     color: var(--primary-blue);
 }
-
 .rating-stars {
     font-size: 1.5rem;
     color: #ffc107;
 }
-
 .rating-count {
     color: var(--medium-gray);
     font-size: 1rem;
 }
-
 .rating-breakdown {
     margin-top: 2rem;
 }
-
 .rating-bar {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-bottom: 0.5rem;
 }
-
 .rating-bar span:first-child {
     width: 80px;
     font-size: 0.875rem;
 }
-
 .bar-container {
     flex: 1;
     height: 20px;
@@ -737,32 +594,27 @@ a:focus {
     border-radius: 10px;
     overflow: hidden;
 }
-
 .bar-fill {
     height: 100%;
     background-color: #ffc107;
     border-radius: 10px;
     transition: width 0.3s ease;
 }
-
 .rating-bar span:last-child {
     width: 40px;
     text-align: right;
     font-size: 0.875rem;
     font-weight: 600;
 }
-
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
 }
-
 .testimonial-card.featured {
     border: 2px solid var(--accent-blue);
     transform: scale(1.02);
 }
-
 .verified-badge {
     display: inline-block;
     background-color: #28a745;
@@ -773,12 +625,9 @@ a:focus {
     font-weight: 600;
     margin-top: 0.5rem;
 }
-
-/* Review categories styles */
 .review-categories {
     margin-top: 2rem;
 }
-
 .category-card {
     background-color: var(--white);
     border-radius: 8px;
@@ -786,36 +635,29 @@ a:focus {
     padding: 1.5rem;
     height: 100%;
 }
-
 .category-rating {
     color: #ffc107;
     font-weight: 600;
     margin: 0.5rem 0;
 }
-
 .mini-review {
     background-color: var(--light-gray);
     border-radius: 6px;
     padding: 0.75rem;
     margin-bottom: 0.75rem;
 }
-
 .mini-review p {
     margin: 0 0 0.25rem 0;
     font-style: italic;
 }
-
 .mini-review span {
     font-size: 0.875rem;
     color: var(--medium-gray);
     font-weight: 600;
 }
-
-/* Review platforms styles */
 .review-platforms {
     margin-top: 2rem;
 }
-
 .platform-card {
     background-color: var(--white);
     border-radius: 8px;
@@ -824,23 +666,18 @@ a:focus {
     text-align: center;
     height: 100%;
 }
-
 .platform-icon {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-
 .platform-rating {
     color: #ffc107;
     font-weight: 600;
     margin: 0.5rem 0;
 }
-
-/* Success stories styles */
 .success-stories {
     margin-top: 2rem;
 }
-
 .story-card {
     background-color: var(--white);
     border-radius: 8px;
@@ -848,7 +685,6 @@ a:focus {
     padding: 2rem;
     margin-bottom: 2rem;
 }
-
 .story-problem,
 .story-solution,
 .story-result {
@@ -856,7 +692,6 @@ a:focus {
     padding-left: 2rem;
     position: relative;
 }
-
 .story-problem h4,
 .story-solution h4,
 .story-result h4 {
@@ -864,12 +699,9 @@ a:focus {
     left: 0;
     top: 0;
 }
-
-/* Service areas styles */
 .service-areas-grid {
     margin-top: 2rem;
 }
-
 .area-card {
     background-color: var(--white);
     border-radius: 8px;
@@ -877,26 +709,20 @@ a:focus {
     padding: 1.5rem;
     height: 100%;
 }
-
 .area-card ul {
     list-style: none;
     padding: 0;
 }
-
 .area-card ul li {
     padding: 0.25rem 0;
     border-bottom: 1px solid #e9ecef;
 }
-
 .area-card ul li:last-child {
     border-bottom: none;
 }
-
-/* FAQ styles */
 .faq-section {
     margin-top: 2rem;
 }
-
 .faq-item {
     background-color: var(--white);
     border-radius: 8px;
@@ -904,18 +730,14 @@ a:focus {
     padding: 1.5rem;
     margin-bottom: 1rem;
 }
-
 .faq-item h4 {
     color: var(--primary-blue);
     margin-bottom: 0.75rem;
 }
-
 .faq-item p {
     margin: 0;
     line-height: 1.6;
 }
-
-/* Business hours styles */
 .business-hours {
     background-color: var(--white);
     border-radius: 8px;
@@ -923,37 +745,29 @@ a:focus {
     padding: 1.5rem;
     margin-top: 2rem;
 }
-
 .hours-grid {
     margin-top: 1rem;
 }
-
 .hours-item {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 0;
     border-bottom: 1px solid #e9ecef;
 }
-
 .hours-item:last-child {
     border-bottom: none;
 }
-
 .hours-item.emergency-hours {
     font-weight: 600;
     color: var(--error-red);
 }
-
 .hours-day {
     color: var(--dark-gray);
 }
-
 .hours-time {
     color: var(--primary-blue);
     font-weight: 600;
 }
-
-/* Response time styles */
 .response-time {
     background-color: var(--white);
     border-radius: 8px;
@@ -961,49 +775,38 @@ a:focus {
     padding: 1.5rem;
     margin-top: 2rem;
 }
-
 .response-list {
     list-style: none;
     padding: 0;
     margin-top: 1rem;
 }
-
 .response-list li {
     padding: 0.5rem 0;
     border-bottom: 1px solid #e9ecef;
 }
-
 .response-list li:last-child {
     border-bottom: none;
 }
-
-/* Emergency contact styles */
 .emergency-contact-info {
     max-width: 600px;
     margin: 0 auto;
 }
-
 .emergency-phone {
     margin-bottom: 1.5rem;
 }
-
 .emergency-info p {
     margin: 0.5rem 0;
 }
-
-/* Service lists styles */
 .service-list {
     list-style: none;
     padding: 0;
     margin: 1rem 0;
 }
-
 .service-list li {
     padding: 0.5rem 0;
     padding-left: 1.5rem;
     position: relative;
 }
-
 .service-list li:before {
     content: "✓";
     position: absolute;
@@ -1011,23 +814,18 @@ a:focus {
     color: var(--success-green);
     font-weight: 600;
 }
-
 .service-features {
     list-style: none;
     padding: 0;
     margin: 1rem 0;
 }
-
 .service-features li {
     padding: 0.75rem 0;
     border-bottom: 1px solid #e9ecef;
 }
-
 .service-features li:last-child {
     border-bottom: none;
 }
-
-/* Service highlight styles */
 .service-highlight {
     background-color: var(--accent-blue);
     border-radius: 8px;
@@ -1035,13 +833,10 @@ a:focus {
     margin: 1.5rem 0;
     border-left: 4px solid var(--primary-blue);
 }
-
 .service-highlight h4 {
     color: var(--primary-blue);
     margin-bottom: 0.75rem;
 }
-
-/* Service image styles */
 .service-image {
     width: 100%;
     height: 300px;
@@ -1049,7 +844,6 @@ a:focus {
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
-
 .company-image {
     width: 100%;
     height: 400px;
@@ -1057,53 +851,41 @@ a:focus {
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
-
-/* Credentials and trust indicator styles */
 .credentials-list,
 .service-areas-list {
     list-style: none;
     padding: 0;
     margin: 1rem 0;
 }
-
 .credentials-list li,
 .service-areas-list li {
     padding: 0.5rem 0;
     border-bottom: 1px solid #e9ecef;
 }
-
 .credentials-list li:last-child,
 .service-areas-list li:last-child {
     border-bottom: none;
 }
-
 .trust-indicator {
     padding: 1rem;
 }
-
 .trust-icon {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-
 .trust-indicator h4 {
     color: var(--primary-blue);
     margin-bottom: 0.5rem;
 }
-
-/* Stats styles */
 .stat-item h3 {
     font-size: 2.5rem;
     color: var(--white);
     margin-bottom: 0.5rem;
 }
-
 .stat-item p {
     color: rgba(255,255,255,0.9);
     font-size: 1.125rem;
 }
-
-/* Loading spinner styles */
 .spinner {
     display: inline-block;
     width: 16px;
@@ -1114,17 +896,13 @@ a:focus {
     animation: spin 1s linear infinite;
     margin-right: 0.5rem;
 }
-
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-
-/* Social links styles */
 .social-links {
     margin-top: 1rem;
 }
-
 .social-links a {
     display: inline-block;
     width: 40px;
@@ -1137,14 +915,11 @@ a:focus {
     margin-right: 0.5rem;
     transition: background-color 0.3s ease;
 }
-
 .social-links a:hover {
     background-color: var(--primary-blue);
     color: var(--white);
     text-decoration: none;
 }
-
-/* Print styles */
 @media print {
     .hero,
     .cta-section,
@@ -1155,18 +930,15 @@ a:focus {
     .contact-form {
         display: none;
     }
-
     body {
         font-size: 12pt;
         color: black;
         background: white;
     }
-
     .container {
         max-width: none;
         padding: 0;
     }
-
     .card {
         box-shadow: none;
         border: 1px solid #ddd;
