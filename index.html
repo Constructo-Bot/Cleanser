@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="سرویس تخصصی تعمیرات لوازم خانگی - یخچال، ماشین لباسشویی، ظرفشویی، اجاق گاز و کولر">
+    <meta name="keywords" content="تعمیرات لوازم خانگی، تعمیر یخچال، تعمیر ماشین لباسشویی، تعمیر ظرفشویی، تعمیر اجاق گاز">
+    <title>سرویس تخصصی تعمیرات لوازم خانگی</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header Top -->
+    <div class="header-top">
+        <div class="container">
+            <div class="header-contact">
+                <span class="phone-desktop">
+                    شماره تماس: <span class="phone-placeholder">[شماره تماس خود را اینجا وارد کنید]</span>
+                </span>
+                <span class="phone-mobile">
+                    <a href="tel:">تماس با ما</a>
+                </span>
+                <span>پاسخگویی ۲۴ ساعته</span>
+                <span>تعمیرات تخصصی لوازم خانگی</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Main -->
+    <header class="header-main">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <a href="index.html" class="logo">سرویس از ما</a>
+                <button class="mobile-menu-toggle" onclick="toggleMenu()">منو</button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="index.html" class="active">صفحه اصلی</a></li>
+                        <li><a href="services.html">خدمات ما</a></li>
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li><a href="contact.html">تماس با ما</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>تعمیرات تخصصی لوازم خانگی</h1>
+            <p class="hero-subtitle">خدمات حرفه‌ای با گارانتی کتبی و قیمت مناسب</p>
+            <div class="hero-buttons">
+                <span class="phone-desktop">
+                    <a href="#" class="btn btn-large btn-primary">تماس: <span class="phone-placeholder">[شماره تماس]</span></a>
+                </span>
+                <span class="phone-mobile">
+                    <a href="tel:" class="btn btn-large btn-primary">تماس فوری</a>
+                </span>
+                <a href="services.html" class="btn btn-large btn-outline">مشاهده خدمات</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="section-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>خدمات تخصصی ما</h2>
+                <p>تعمیرات حرفه‌ای انواع لوازم خانگی با گارانتی کتبی</p>
+            </div>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon">❄️</div>
+                    <h3>تعمیر یخچال و فریزر</h3>
+                    <p>تعمیرات تخصصی انواع یخچال و فریزر خانگی و صنعتی با قطعات اصلی</p>
+                    <ul>
+                        <li>تعمیر موتور یخچال</li>
+                        <li>رفع نشتی گاز</li>
+                        <li>تعویض ترموستات</li>
+                        <li>تعمیر سیستم برودتی</li>
+                    </ul>
+                    <a href="services.html#refrigerator" class="btn btn-primary">اطلاعات بیشتر</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔄</div>
+                    <h3>تعمیر ماشین لباسشویی</h3>
+                    <p>سرویس و تعمیر انواع ماشین لباسشویی اتوماتیک و نیمه اتوماتیک</p>
+                    <ul>
+                        <li>تعمیر موتور و گیربکس</li>
+                        <li>رفع نشتی آب</li>
+                        <li>تعویض پمپ تخلیه</li>
+                        <li>تعمیر برد الکترونیکی</li>
+                    </ul>
+                    <a href="services.html#washing" class="btn btn-primary">اطلاعات بیشتر</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🍽️</div>
+                    <h3>تعمیر ماشین ظرفشویی</h3>
+                    <p>تعمیرات کامل ماشین ظرفشویی با ضمانت کار انجام شده</p>
+                    <ul>
+                        <li>رفع مشکل شستشو</li>
+                        <li>تعمیر سیستم آبگیری</li>
+                        <li>تعویض پمپ و موتور</li>
+                        <li>بازسازی سیستم تخلیه</li>
+                    </ul>
+                    <a href="services.html#dishwasher" class="btn btn-primary">اطلاعات بیشتر</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔥</div>
+                    <h3>تعمیر اجاق گاز</h3>
+                    <p>سرویس و تعمیر انواع اجاق گاز رومیزی و فر برقی</p>
+                    <ul>
+                        <li>تنظیم شعله اجاق</li>
+                        <li>تعمیر فر برقی و گازی</li>
+                        <li>تعویض شیرآلات گازی</li>
+                        <li>رفع نشتی گاز</li>
+                    </ul>
+                    <a href="services.html#stove" class="btn btn-primary">اطلاعات بیشتر</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">❄️</div>
+                    <h3>تعمیر کولر گازی</h3>
+                    <p>نصب، سرویس و تعمیر انواع کولر گازی اسپلیت و داکت</p>
+                    <ul>
+                        <li>شارژ گاز کولر</li>
+                        <li>تعمیر کمپرسور</li>
+                        <li>سرویس دوره‌ای</li>
+                        <li>رفع نشتی سیستم</li>
+                    </ul>
+                    <a href="services.html#ac" class="btn btn-primary">اطلاعات بیشتر</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🚿</div>
+                    <h3>تعمیر آبگرمکن</h3>
+                    <p>تعمیر و سرویس آبگرمکن گازی و برقی با گارانتی</p>
+                    <ul>
+                        <li>تعمیر سیستم احتراق</li>
+                        <li>تعویض المنت</li>
+                        <li>رفع نشتی آب</li>
+                        <li>سرویس سالیانه</li>
+                    </ul>
+                    <a href="services.html#heater" class="btn btn-primary">اطلاعات بیشتر</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="section-title">
+                <h2>چرا ما را انتخاب کنید؟</h2>
+                <p>مزایای استفاده از خدمات ما</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>سرویس سریع</h3>
+                    <p>حضور سریع تکنسین در محل شما در کمترین زمان ممکن</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>گارانتی کتبی</h3>
+                    <p>ارائه گارانتی کتبی برای تمام تعمیرات انجام شده</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>قیمت مناسب</h3>
+                    <p>بهترین قیمت با کیفیت بالا و قطعات اصلی</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>تکنسین متخصص</h3>
+                    <p>تیم مجرب و حرفه‌ای با سال‌ها تجربه در تعمیرات</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>پشتیبانی ۲۴ ساعته</h3>
+                    <p>آماده پاسخگویی و خدمت‌رسانی در تمام ساعات شبانه‌روز</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>کیفیت برتر</h3>
+                    <p>استفاده از قطعات اصلی و مرغوب با بالاترین کیفیت</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>نیاز به تعمیرات فوری دارید؟</h2>
+            <p>با ما تماس بگیرید، تکنسین ما در سریع‌ترین زمان نزد شما خواهد بود</p>
+            <div class="cta-buttons">
+                <span class="phone-desktop">
+                    <a href="#" class="btn btn-large btn-primary">تماس: <span class="phone-placeholder">[شماره تماس]</span></a>
+                </span>
+                <span class="phone-mobile">
+                    <a href="tel:" class="btn btn-large btn-primary">تماس فوری</a>
+                </span>
+                <a href="contact.html" class="btn btn-large btn-outline">اطلاعات تماس</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="section-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>محدوده خدمات‌رسانی</h2>
+                <p>ارائه خدمات در سراسر شهر</p>
+            </div>
+            <div class="info-box">
+                <h3>مناطق تحت پوشش</h3>
+                <p>ما آماده ارائه خدمات تعمیرات لوازم خانگی در تمامی مناطق شهر تهران هستیم. تکنسین‌های مجرب ما در کوتاه‌ترین زمان ممکن به محل شما اعزام می‌شوند.</p>
+                <div style="margin-top: 30px;">
+                    <ul>
+                        <li>منطقه ۱ تهران - شمال شهر</li>
+                        <li>منطقه ۲ تهران - غرب شهر</li>
+                        <li>منطقه ۳ تهران - مرکز شهر</li>
+                        <li>منطقه ۴ تهران - شرق شهر</li>
+                        <li>منطقه ۵ تهران - جنوب شهر</li>
+                        <li>و تمامی مناطق دیگر تهران</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>سرویس از ما</h3>
+                    <p>ارائه خدمات تخصصی تعمیرات لوازم خانگی با بهترین کیفیت و قیمت مناسب. تیم حرفه‌ای ما آماده خدمت‌رسانی به شما عزیزان است.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>دسترسی سریع</h3>
+                    <ul>
+                        <li><a href="index.html">صفحه اصلی</a></li>
+                        <li><a href="services.html">خدمات ما</a></li>
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li><a href="contact.html">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>خدمات</h3>
+                    <ul>
+                        <li><a href="services.html#refrigerator">تعمیر یخچال</a></li>
+                        <li><a href="services.html#washing">تعمیر ماشین لباسشویی</a></li>
+                        <li><a href="services.html#dishwasher">تعمیر ظرفشویی</a></li>
+                        <li><a href="services.html#stove">تعمیر اجاق گاز</a></li>
+                        <li><a href="services.html#ac">تعمیر کولر گازی</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تماس با ما</h3>
+                    <ul>
+                        <li class="phone-desktop">تلفن: <span class="phone-placeholder">[شماره تماس]</span></li>
+                        <li class="phone-mobile"><a href="tel:">تماس با ما</a></li>
+                        <li>پاسخگویی ۲۴ ساعته</li>
+                        <li>سراسر تهران</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ۱۴۰۳ سرویس از ما. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
