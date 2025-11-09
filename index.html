@@ -285,6 +285,84 @@
             const nav = document.getElementById('mainNav');
             nav.classList.toggle('active');
         }
+
+        // Search Functionality
+        const searchData = [
+            // Services
+            { title: 'تعمیر ماشین لباسشویی', description: 'سرویس و تعمیر انواع ماشین لباسشویی اتوماتیک و نیمه اتوماتیک، تعمیر موتور و گیربکس، رفع نشتی آب', url: 'services.html#washing', category: 'خدمات', keywords: ['لباسشویی', 'ماشین لباسشویی', 'موتور', 'گیربکس', 'نشتی'] },
+            { title: 'تعمیر ماشین ظرفشویی', description: 'تعمیرات کامل ماشین ظرفشویی، رفع مشکل شستشو، تعمیر سیستم آبگیری', url: 'services.html#dishwasher', category: 'خدمات', keywords: ['ظرفشویی', 'ماشین ظرفشویی', 'شستشو', 'آبگیری'] },
+            { title: 'تعمیر یخچال و فریزر', description: 'تعمیرات تخصصی یخچال و فریزر، تعمیر موتور یخچال، رفع نشتی گاز، تعویض ترموستات', url: 'services.html#refrigerator', category: 'خدمات', keywords: ['یخچال', 'فریزر', 'موتور یخچال', 'نشتی گاز', 'ترموستات', 'برودتی'] },
+            { title: 'تعمیر اجاق گاز', description: 'سرویس و تعمیر اجاق گاز، تنظیم شعله، تعمیر فر برقی و گازی، رفع نشتی گاز', url: 'services.html#stove', category: 'خدمات', keywords: ['اجاق گاز', 'فر', 'شعله', 'نشتی گاز', 'فر برقی'] },
+            { title: 'تعمیر کولر گازی', description: 'نصب و سرویس کولر گازی اسپلیت و داکت، شارژ گاز کولر، تعمیر کمپرسور', url: 'services.html#ac', category: 'خدمات', keywords: ['کولر', 'کولر گازی', 'اسپلیت', 'شارژ گاز', 'کمپرسور'] },
+            { title: 'تعمیر آبگرمکن', description: 'تعمیر و سرویس آبگرمکن گازی و برقی، تعمیر سیستم احتراق، تعویض المنت', url: 'services.html#heater', category: 'خدمات', keywords: ['آبگرمکن', 'المنت', 'سیستم احتراق', 'آب گرم'] },
+            { title: 'تعمیر مایکروویو', description: 'تعمیرات تخصصی فر مایکروویو، تعمیر مگنترون، تعویض صفحه گردان', url: 'services.html#microwave', category: 'خدمات', keywords: ['مایکروویو', 'مگنترون', 'فر مایکروویو'] },
+            { title: 'تعمیر بخاری و شوفاژ', description: 'سرویس و تعمیر سیستم‌های گرمایشی، تعمیر پکیج شوفاژ، رادیاتور', url: 'services.html#room-heater', category: 'خدمات', keywords: ['بخاری', 'شوفاژ', 'پکیج', 'رادیاتور', 'گرمایش'] },
+            { title: 'تعمیر لوازم آشپزخانه', description: 'تعمیر هود، توستر، مخلوط کن، غذاساز، قهوه ساز و سایر لوازم آشپزخانه', url: 'services.html#kitchen', category: 'خدمات', keywords: ['هود', 'توستر', 'مخلوط کن', 'غذاساز', 'قهوه ساز', 'آشپزخانه'] },
+
+            // Pages
+            { title: 'درباره تکنیکار', description: 'آشنایی با تیم تخصصی تکنیکار، تجربه و خدمات ما', url: 'about.html', category: 'صفحات', keywords: ['درباره', 'تیم', 'تجربه', 'تکنیکار'] },
+            { title: 'تماس با ما', description: 'اطلاعات تماس، آدرس، شماره تلفن، ساعات کاری', url: 'contact.html', category: 'صفحات', keywords: ['تماس', 'آدرس', 'تلفن', 'شماره'] },
+            { title: 'خدمات ما', description: 'لیست کامل خدمات تعمیرات لوازم خانگی', url: 'services.html', category: 'صفحات', keywords: ['خدمات', 'تعمیرات', 'لیست خدمات'] },
+
+            // Features
+            { title: 'گارانتی کتبی', description: 'ارائه گارانتی کتبی برای تمام تعمیرات انجام شده', url: 'about.html', category: 'مزایا', keywords: ['گارانتی', 'کتبی', 'ضمانت'] },
+            { title: 'پشتیبانی ۲۴ ساعته', description: 'آماده پاسخگویی و خدمت‌رسانی در تمام ساعات شبانه‌روز', url: 'contact.html', category: 'مزایا', keywords: ['پشتیبانی', '24 ساعته', 'شبانه روز'] },
+            { title: 'قیمت مناسب', description: 'بهترین قیمت با کیفیت بالا و قطعات اصلی', url: 'about.html', category: 'مزایا', keywords: ['قیمت', 'ارزان', 'مناسب'] },
+            { title: 'سرویس سریع', description: 'حضور سریع تکنسین در محل شما در کمترین زمان ممکن', url: 'about.html', category: 'مزایا', keywords: ['سریع', 'فوری', 'تکنسین'] },
+
+            // Service Areas
+            { title: 'مناطق تحت پوشش تهران', description: 'خدمات‌رسانی در تمامی مناطق ۲۲ گانه شهر تهران', url: 'contact.html', category: 'محدوده خدمات', keywords: ['تهران', 'مناطق', 'محدوده', 'منطقه'] }
+        ];
+
+        const searchInput = document.getElementById('searchInput');
+        const searchResults = document.getElementById('searchResults');
+
+        searchInput.addEventListener('input', function(e) {
+            const query = e.target.value.trim();
+
+            if (query.length < 2) {
+                searchResults.classList.remove('active');
+                return;
+            }
+
+            const results = searchData.filter(item => {
+                const searchTerms = query.toLowerCase();
+                return item.title.toLowerCase().includes(searchTerms) ||
+                       item.description.toLowerCase().includes(searchTerms) ||
+                       item.keywords.some(keyword => keyword.toLowerCase().includes(searchTerms));
+            });
+
+            displayResults(results, query);
+        });
+
+        function displayResults(results, query) {
+            if (results.length === 0) {
+                searchResults.innerHTML = '<div class="no-results">نتیجه‌ای یافت نشد</div>';
+                searchResults.classList.add('active');
+                return;
+            }
+
+            let html = '';
+            results.forEach(item => {
+                html += `
+                    <div class="search-result-item" onclick="window.location.href='${item.url}'">
+                        <div class="search-result-title">${item.title}</div>
+                        <div class="search-result-description">${item.description}</div>
+                        <div class="search-result-category">${item.category}</div>
+                    </div>
+                `;
+            });
+
+            searchResults.innerHTML = html;
+            searchResults.classList.add('active');
+        }
+
+        // Close search results when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+                searchResults.classList.remove('active');
+            }
+        });
     </script>
 
 </body>
