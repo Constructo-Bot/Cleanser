@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تماس با سرویس از ما - اطلاعات تماس و درخواست خدمات تعمیرات لوازم خانگی">
+    <title>تماس با ما - سرویس تخصصی تعمیرات</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header Top -->
+    <div class="header-top">
+        <div class="container">
+            <div class="header-contact">
+                <span class="phone-desktop">
+                    شماره تماس: <span class="phone-placeholder">[شماره تماس خود را اینجا وارد کنید]</span>
+                </span>
+                <span class="phone-mobile">
+                    <a href="tel:">تماس با ما</a>
+                </span>
+                <span>پاسخگویی ۲۴ ساعته</span>
+                <span>تعمیرات تخصصی لوازم خانگی</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Main -->
+    <header class="header-main">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <a href="index.html" class="logo">سرویس از ما</a>
+                <button class="mobile-menu-toggle" onclick="toggleMenu()">منو</button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="index.html">صفحه اصلی</a></li>
+                        <li><a href="services.html">خدمات ما</a></li>
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li><a href="contact.html" class="active">تماس با ما</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>تماس با ما</h1>
+            <p class="hero-subtitle">آماده پاسخگویی به شما هستیم</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="section-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>اطلاعات تماس</h2>
+                <p>راه‌های ارتباطی با ما</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3>شماره تماس</h3>
+                    <p>برای تماس با ما و درخواست خدمات:</p>
+                    <p style="font-size: 24px; margin: 20px 0;">
+                        <span class="phone-desktop phone-placeholder">[شماره تماس خود را اینجا وارد کنید]</span>
+                        <span class="phone-mobile">
+                            <a href="tel:" style="color: #667eea;">[شماره تماس]</a>
+                        </span>
+                    </p>
+                    <p style="color: #666;">همین الان با ما تماس بگیرید</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">⏰</div>
+                    <h3>ساعات کاری</h3>
+                    <p><strong>پاسخگویی ۲۴ ساعته</strong></p>
+                    <p>تمامی روزهای هفته</p>
+                    <p>همه ساعات شبانه‌روز</p>
+                    <p style="margin-top: 15px; color: #667eea;"><strong>حتی ایام تعطیل</strong></p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>محدوده خدمات</h3>
+                    <p>سراسر شهر تهران</p>
+                    <p>تمامی مناطق ۲۲ گانه</p>
+                    <p>حومه تهران</p>
+                    <p style="margin-top: 15px;"><a href="about.html" style="color: #667eea;">مشاهده مناطق تحت پوشش</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Response Time -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="section-title">
+                <h2>زمان پاسخگویی</h2>
+                <p>سرعت عمل اولویت ماست</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>پاسخ تلفنی</h3>
+                    <p>پاسخگویی فوری در تمامی ساعات</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚗</div>
+                    <h3>اعزام تکنسین</h3>
+                    <p>حداکثر ۲ ساعت در مناطق تحت پوشش</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>شروع تعمیر</h3>
+                    <p>بررسی و شروع فوری تعمیرات</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Request Service -->
+    <section class="section-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>نحوه درخواست خدمات</h2>
+                <p>مراحل دریافت سرویس به‌صورت گام‌به‌گام</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">۱</div>
+                    <h4>تماس تلفنی</h4>
+                    <p>با شماره‌های ما تماس بگیرید</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">۲</div>
+                    <h4>توضیح مشکل</h4>
+                    <p>مشکل دستگاه خود را شرح دهید</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">۳</div>
+                    <h4>هماهنگی زمان</h4>
+                    <p>زمان مناسب برای اعزام تکنسین تعیین می‌شود</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">۴</div>
+                    <h4>حضور تکنسین</h4>
+                    <p>تکنسین در زمان مقرر نزد شما حاضر می‌شود</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">۵</div>
+                    <h4>بررسی و تعمیر</h4>
+                    <p>بررسی کامل و انجام تعمیرات لازم</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">۶</div>
+                    <h4>دریافت گارانتی</h4>
+                    <p>دریافت گارانتی کتبی تعمیرات</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="emergency-highlight">
+                <h2 style="margin-bottom: 15px;">نیاز به تعمیرات اضطراری دارید؟</h2>
+                <p style="font-size: 18px; margin-bottom: 20px;">در شرایط اضطراری، فوراً با ما تماس بگیرید</p>
+                <p style="font-size: 28px; font-weight: bold;">
+                    <span class="phone-desktop phone-placeholder">[شماره تماس خود را اینجا وارد کنید]</span>
+                    <span class="phone-mobile">
+                        <a href="tel:" style="color: white; text-decoration: underline;">تماس فوری</a>
+                    </span>
+                </p>
+                <p style="margin-top: 15px; font-size: 16px;">آماده خدمت‌رسانی در تمامی ساعات شبانه‌روز</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Detail -->
+    <section class="section-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>مناطق تحت پوشش</h2>
+                <p>خدمات‌رسانی در سراسر تهران</p>
+            </div>
+            <div class="info-box">
+                <h3>محدوده‌های خدمات‌رسانی</h3>
+                <p style="margin-bottom: 20px;">ما در تمامی مناطق شهر تهران و حومه آماده ارائه خدمات تعمیرات لوازم خانگی هستیم:</p>
+                <ul>
+                    <li>منطقه ۱ - شمال تهران (ولنجک، تجریش، نیاوران، فرمانیه)</li>
+                    <li>منطقه ۲ - شمال غربی (سعادت‌آباد، شهرک غرب، پونک)</li>
+                    <li>منطقه ۳ - مرکز و شرق (ونک، یوسف‌آباد، پاسداران)</li>
+                    <li>منطقه ۴ - شرق تهران (تهرانپارس، نارمک)</li>
+                    <li>منطقه ۵ - جنوب شرق (کیانشهر، دروس)</li>
+                    <li>منطقه ۶ - غرب تهران (استاد معین، آزادی)</li>
+                    <li>منطقه ۷ - مرکز (میدان انقلاب، ولیعصر)</li>
+                    <li>منطقه ۸ - جنوب (حسن‌آباد، نارمک)</li>
+                    <li>منطقه ۹ تا ۲۲ - تمامی مناطق دیگر تهران</li>
+                    <li>حومه تهران - شهرهای اطراف با هماهنگی قبلی</li>
+                </ul>
+                <p style="margin-top: 30px; text-align: center; font-size: 18px; background: #fff3cd; padding: 20px; border-radius: 10px; color: #856404;">
+                    <strong>توجه:</strong> برای اطمینان از امکان سرویس‌دهی در منطقه شما، لطفاً با ما تماس بگیرید
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="section-title">
+                <h2>سوالات متداول</h2>
+                <p>پاسخ به سوالات رایج مشتریان</p>
+            </div>
+            <div style="display: grid; gap: 20px; max-width: 900px; margin: 0 auto;">
+                <div class="info-box">
+                    <h3>❓ آیا هزینه ویزیت دارید؟</h3>
+                    <p>بله، هزینه ویزیت و بازدید اولیه جداگانه محاسبه می‌شود که در صورت انجام تعمیر، از هزینه کل کسر خواهد شد.</p>
+                </div>
+                <div class="info-box">
+                    <h3>❓ گارانتی تعمیرات چقدر است؟</h3>
+                    <p>تمامی تعمیرات انجام شده دارای گارانتی کتبی می‌باشد که مدت زمان آن بسته به نوع تعمیر متفاوت است.</p>
+                </div>
+                <div class="info-box">
+                    <h3>❓ زمان حضور تکنسین چقدر است؟</h3>
+                    <p>تکنسین ما حداکثر ظرف ۲ ساعت در مناطق تحت پوشش در محل شما حاضر خواهد شد.</p>
+                </div>
+                <div class="info-box">
+                    <h3>❓ قطعات یدکی اصل هستند؟</h3>
+                    <p>بله، ما تنها از قطعات اصلی و مرغوب استفاده می‌کنیم که خود دارای گارانتی می‌باشند.</p>
+                </div>
+                <div class="info-box">
+                    <h3>❓ آیا در روزهای تعطیل هم کار می‌کنید؟</h3>
+                    <p>بله، ما ۲۴ ساعته و در تمامی روزهای هفته از جمله ایام تعطیل آماده خدمت‌رسانی هستیم.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>آماده خدمت‌رسانی به شما هستیم</h2>
+            <p>برای دریافت مشاوره رایگان و هماهنگی زمان سرویس، همین الان با ما تماس بگیرید</p>
+            <div class="cta-buttons">
+                <span class="phone-desktop">
+                    <a href="#" class="btn btn-large btn-primary">تماس: <span class="phone-placeholder">[شماره تماس]</span></a>
+                </span>
+                <span class="phone-mobile">
+                    <a href="tel:" class="btn btn-large btn-primary">تماس فوری</a>
+                </span>
+                <a href="services.html" class="btn btn-large btn-outline">مشاهده خدمات</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>سرویس از ما</h3>
+                    <p>ارائه خدمات تخصصی تعمیرات لوازم خانگی با بهترین کیفیت و قیمت مناسب.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>دسترسی سریع</h3>
+                    <ul>
+                        <li><a href="index.html">صفحه اصلی</a></li>
+                        <li><a href="services.html">خدمات ما</a></li>
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li><a href="contact.html">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>خدمات</h3>
+                    <ul>
+                        <li><a href="services.html#refrigerator">تعمیر یخچال</a></li>
+                        <li><a href="services.html#washing">تعمیر ماشین لباسشویی</a></li>
+                        <li><a href="services.html#dishwasher">تعمیر ظرفشویی</a></li>
+                        <li><a href="services.html#stove">تعمیر اجاق گاز</a></li>
+                        <li><a href="services.html#ac">تعمیر کولر گازی</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تماس با ما</h3>
+                    <ul>
+                        <li class="phone-desktop">تلفن: <span class="phone-placeholder">[شماره تماس]</span></li>
+                        <li class="phone-mobile"><a href="tel:">تماس با ما</a></li>
+                        <li>پاسخگویی ۲۴ ساعته</li>
+                        <li>سراسر تهران</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ۱۴۰۳ سرویس از ما. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
