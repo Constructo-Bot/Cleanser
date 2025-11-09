@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    <!-- Header Top -->
     <div class="header-top">
         <div class="container">
             <div class="header-contact">
@@ -25,8 +23,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Header Main -->
     <header class="header-main">
         <div class="container">
             <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -43,19 +39,14 @@
             </div>
         </div>
     </header>
-
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <h1>تعمیرات و سرویس لباسشویی</h1>
             <p class="hero-subtitle">خدمات حرفه‌ای با گارانتی کتبی و قیمت مناسب</p>
-
-            <!-- Search Bar -->
             <div class="search-container">
                 <input type="text" id="searchInput" class="search-input" placeholder="جستجو در سایت... (مثلاً: تعمیر یخچال، ماشین لباسشویی، کولر)">
                 <div id="searchResults" class="search-results"></div>
             </div>
-
             <div class="hero-buttons">
                 <span class="phone-desktop">
                     <a href="#" class="btn btn-large btn-primary">تماس: <span class="phone-placeholder">09194766090</span></a>
@@ -67,8 +58,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Services Overview -->
     <section class="section-light">
         <div class="container">
             <div class="section-title">
@@ -88,7 +77,6 @@
                     </ul>
                     <a href="services.html#washing" class="btn btn-primary">اطلاعات بیشتر</a>
                 </div>
-
                 <div class="service-card">
                     <div class="service-icon">🍽️</div>
                     <h3>تعمیر ماشین ظرفشویی</h3>
@@ -101,7 +89,6 @@
                     </ul>
                     <a href="services.html#dishwasher" class="btn btn-primary">اطلاعات بیشتر</a>
                 </div>
-
                 <div class="service-card">
                     <div class="service-icon">❄️</div>
                     <h3>تعمیر یخچال و فریزر</h3>
@@ -114,7 +101,6 @@
                     </ul>
                     <a href="services.html#refrigerator" class="btn btn-primary">اطلاعات بیشتر</a>
                 </div>
-
                 <div class="service-card">
                     <div class="service-icon">🔥</div>
                     <h3>تعمیر اجاق گاز</h3>
@@ -127,7 +113,6 @@
                     </ul>
                     <a href="services.html#stove" class="btn btn-primary">اطلاعات بیشتر</a>
                 </div>
-
                 <div class="service-card">
                     <div class="service-icon">❄️</div>
                     <h3>تعمیر کولر گازی</h3>
@@ -140,7 +125,6 @@
                     </ul>
                     <a href="services.html#ac" class="btn btn-primary">اطلاعات بیشتر</a>
                 </div>
-
                 <div class="service-card">
                     <div class="service-icon">🚿</div>
                     <h3>تعمیر آبگرمکن</h3>
@@ -156,8 +140,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Why Choose Us -->
     <section class="section-dark">
         <div class="container">
             <div class="section-title">
@@ -198,8 +180,6 @@
             </div>
         </div>
     </section>
-
-    <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
             <h2>نیاز به تعمیرات فوری دارید؟</h2>
@@ -215,8 +195,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Service Areas -->
     <section class="section-light">
         <div class="container">
             <div class="section-title">
@@ -242,8 +220,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -282,16 +258,12 @@
             </div>
         </div>
     </footer>
-
     <script>
         function toggleMenu() {
             const nav = document.getElementById('mainNav');
             nav.classList.toggle('active');
         }
-
-        // Search Functionality
         const searchData = [
-            // Services
             { title: 'تعمیر ماشین لباسشویی', description: 'سرویس و تعمیر انواع ماشین لباسشویی اتوماتیک و نیمه اتوماتیک، تعمیر موتور و گیربکس، رفع نشتی آب', url: 'services.html#washing', category: 'خدمات', keywords: ['لباسشویی', 'ماشین لباسشویی', 'موتور', 'گیربکس', 'نشتی'] },
             { title: 'تعمیر ماشین ظرفشویی', description: 'تعمیرات کامل ماشین ظرفشویی، رفع مشکل شستشو، تعمیر سیستم آبگیری', url: 'services.html#dishwasher', category: 'خدمات', keywords: ['ظرفشویی', 'ماشین ظرفشویی', 'شستشو', 'آبگیری'] },
             { title: 'تعمیر یخچال و فریزر', description: 'تعمیرات تخصصی یخچال و فریزر، تعمیر موتور یخچال، رفع نشتی گاز، تعویض ترموستات', url: 'services.html#refrigerator', category: 'خدمات', keywords: ['یخچال', 'فریزر', 'موتور یخچال', 'نشتی گاز', 'ترموستات', 'برودتی'] },
@@ -301,50 +273,37 @@
             { title: 'تعمیر مایکروویو', description: 'تعمیرات تخصصی فر مایکروویو، تعمیر مگنترون، تعویض صفحه گردان', url: 'services.html#microwave', category: 'خدمات', keywords: ['مایکروویو', 'مگنترون', 'فر مایکروویو'] },
             { title: 'تعمیر بخاری و شوفاژ', description: 'سرویس و تعمیر سیستم‌های گرمایشی، تعمیر پکیج شوفاژ، رادیاتور', url: 'services.html#room-heater', category: 'خدمات', keywords: ['بخاری', 'شوفاژ', 'پکیج', 'رادیاتور', 'گرمایش'] },
             { title: 'تعمیر لوازم آشپزخانه', description: 'تعمیر هود، توستر، مخلوط کن، غذاساز، قهوه ساز و سایر لوازم آشپزخانه', url: 'services.html#kitchen', category: 'خدمات', keywords: ['هود', 'توستر', 'مخلوط کن', 'غذاساز', 'قهوه ساز', 'آشپزخانه'] },
-
-            // Pages
             { title: 'درباره تکنیکار', description: 'آشنایی با تیم تخصصی تکنیکار، تجربه و خدمات ما', url: 'about.html', category: 'صفحات', keywords: ['درباره', 'تیم', 'تجربه', 'تکنیکار'] },
             { title: 'تماس با ما', description: 'اطلاعات تماس، آدرس، شماره تلفن، ساعات کاری', url: 'contact.html', category: 'صفحات', keywords: ['تماس', 'آدرس', 'تلفن', 'شماره'] },
             { title: 'خدمات ما', description: 'لیست کامل خدمات تعمیرات لوازم خانگی', url: 'services.html', category: 'صفحات', keywords: ['خدمات', 'تعمیرات', 'لیست خدمات'] },
-
-            // Features
             { title: 'گارانتی کتبی', description: 'ارائه گارانتی کتبی برای تمام تعمیرات انجام شده', url: 'about.html', category: 'مزایا', keywords: ['گارانتی', 'کتبی', 'ضمانت'] },
             { title: 'پشتیبانی ۲۴ ساعته', description: 'آماده پاسخگویی و خدمت‌رسانی در تمام ساعات شبانه‌روز', url: 'contact.html', category: 'مزایا', keywords: ['پشتیبانی', '24 ساعته', 'شبانه روز'] },
             { title: 'قیمت مناسب', description: 'بهترین قیمت با کیفیت بالا و قطعات اصلی', url: 'about.html', category: 'مزایا', keywords: ['قیمت', 'ارزان', 'مناسب'] },
             { title: 'سرویس سریع', description: 'حضور سریع تکنسین در محل شما در کمترین زمان ممکن', url: 'about.html', category: 'مزایا', keywords: ['سریع', 'فوری', 'تکنسین'] },
-
-            // Service Areas
             { title: 'مناطق تحت پوشش تهران', description: 'خدمات‌رسانی در تمامی مناطق ۲۲ گانه شهر تهران', url: 'contact.html', category: 'محدوده خدمات', keywords: ['تهران', 'مناطق', 'محدوده', 'منطقه'] }
         ];
-
         const searchInput = document.getElementById('searchInput');
         const searchResults = document.getElementById('searchResults');
-
         searchInput.addEventListener('input', function(e) {
             const query = e.target.value.trim();
-
             if (query.length < 2) {
                 searchResults.classList.remove('active');
                 return;
             }
-
             const results = searchData.filter(item => {
                 const searchTerms = query.toLowerCase();
                 return item.title.toLowerCase().includes(searchTerms) ||
                        item.description.toLowerCase().includes(searchTerms) ||
                        item.keywords.some(keyword => keyword.toLowerCase().includes(searchTerms));
             });
-
             displayResults(results, query);
         });
-
         function displayResults(results, query) {
             if (results.length === 0) {
                 searchResults.innerHTML = '<div class="no-results">نتیجه‌ای یافت نشد</div>';
                 searchResults.classList.add('active');
                 return;
             }
-
             let html = '';
             results.forEach(item => {
                 html += `
@@ -355,18 +314,14 @@
                     </div>
                 `;
             });
-
             searchResults.innerHTML = html;
             searchResults.classList.add('active');
         }
-
-        // Close search results when clicking outside
         document.addEventListener('click', function(e) {
             if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
                 searchResults.classList.remove('active');
             }
         });
     </script>
-
 </body>
 </html>
